@@ -1,8 +1,28 @@
-# Redux Toolkit TypeScript Example
+# Redux Toolkit TypeScript Nextjs y React
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+En este boilerplate incluyo las herramientas basicas para poder comenzar un nuevo proyecto sin demora asi como
+la estructura de carpetas que sera la que utilizare de ahora en adelante a menos que encuentre una mejor en
+cuyo caso solamente actualizare este repositorio
 
-The **Redux Toolkit** is a standardized way to write Redux logic (create actions and reducers, setup the store with some default middlewares like redux devtools extension). This example demonstrates each of these features with Next.js
+Este boilerplate contiene las siguientes dependencias como base:
+
+"@apollo/client": "^3.4.16"
+
+"@reduxjs/toolkit": "^1.3.6"
+
+"axios": "^0.24.0"
+
+"js-cookie": "^3.0.1"
+
+"next": "latest"
+
+"react": "^17.0.2"
+
+"react-dom": "^17.0.2"
+
+"react-redux": "^7.2.0"
+
+"styled-components": "^5.3.3"
 
 ## Deploy your own
 
