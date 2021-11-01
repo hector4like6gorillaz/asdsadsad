@@ -23,7 +23,10 @@ import {
   PokemonName,
   PokemonP,
 } from "../styles/StyledInit";
-import { DarkMode, handleMode } from "../app/components/ReduxSlices/CookiesSlice";
+import {
+  DarkMode,
+  handleMode,
+} from "../app/components/ReduxSlices/CookiesSlice";
 
 const dependencias = [
   `"@apollo/client": "^3.4.16"`,
@@ -42,10 +45,10 @@ const IndexPage: NextPage = () => {
   const count = useAppSelector(selectCount);
   const mode = useAppSelector(DarkMode);
 
-  console.log(mode)
+  console.log(mode);
   const [Data, setData] = useState<any>();
   //This is the first page, can be Login
-  
+
   //useEffect(() => {
   //  const press = () => router.push(`/home`);
   //  press();
@@ -85,12 +88,16 @@ const IndexPage: NextPage = () => {
     redirige a "/home" a modo de conservar el las rutas, por el momento a modo de boiler
     utilizando la api de pokemon de manera simple mostrare la info de charmander
     con axios en este efecto
+
+    git remote add origin https://github.com/hector4like6gorillaz/boilerNextjs.git
+    git branch -M main
+    git push -u origin main
     */}
       <DivContainerPokemon>
         <PokemonH2>
           Este es un boilerplate con Nextjs y la api de pokemon
         </PokemonH2>
-        <CardPokemon onClick={()=>dispatch(handleMode(!mode))}>
+        <CardPokemon onClick={() => dispatch(handleMode(!mode))}>
           <PokemonImg alt="Imagen pokemon" src={Data?.sprites.front_default} />
           <PokemonName>{Data?.name}</PokemonName>
         </CardPokemon>
@@ -120,7 +127,6 @@ const IndexPage: NextPage = () => {
         {dependencias.map((item, index) => {
           return <PokemonP key={index}>{item}</PokemonP>;
         })}
-        
       </DivContainerPokemon>
     </HeaderFooterWraper>
   );
