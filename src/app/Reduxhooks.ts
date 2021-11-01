@@ -3,6 +3,9 @@ import { useEffect, useRef } from 'react'
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
 
 import type { AppDispatch, AppState } from './store'
+/*
+Redux hooks!!!!! dont touch it!
+*/
 
 export const useForm =
   <TContent>(defaultValues: TContent) =>
