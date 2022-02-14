@@ -1,13 +1,12 @@
-import { NextPage } from "next";
+import React from "react"; 
 import Head from "next/head";
-import React from "react";
-import { prefix } from "../../../pages/_app";
 import { GlobalStyle } from "../../../styles/createGlobalStyles";
 import BodyColorChange from "../BodyColorChange";
+import { prefix } from "../../../pages/_app";
 
 //Components
 
-const HeaderFooterWraper: NextPage = ({ children }) => {
+const HeaderFooterWraper = ({ children }) => {
   return (
     <div>
       <GlobalStyle />

@@ -1,9 +1,7 @@
 import type { NextPage } from "next";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { envAPI } from "../app/components/ApiCall";
 import Link from "next/link";
-
 import HeaderFooterWraper from "../app/components/layout/InitWraper";
 import {
   decrement,
@@ -11,7 +9,6 @@ import {
   selectCount,
 } from "../app/components/ReduxSlices/counterSlice";
 import { useAppDispatch, useAppSelector } from "../app/Reduxhooks";
-
 import {
   CardPokemon,
   DivContainerPokemon,
@@ -48,15 +45,7 @@ const IndexPage: NextPage = () => {
 
   console.log(mode);
   const [Data, setData] = useState<any>();
-  //This is the first page, can be Login
-
-  //useEffect(() => {
-  //  const press = () => router.push(`/home`);
-  //  press();
-  //  return () => {
-  //    press();
-  //  };
-  //}, []);
+  
   const response = async (page: string) => envAPI(page);
   async function loadapi() {
     const resp = await response(`pokemon/${count}/`);
