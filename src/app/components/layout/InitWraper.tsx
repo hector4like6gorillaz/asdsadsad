@@ -1,10 +1,8 @@
-import React from "react"; 
+import React from "react";
 import Head from "next/head";
 import { GlobalStyle } from "../../../styles/createGlobalStyles";
 import BodyColorChange from "../BodyColorChange";
 import { prefix } from "../../../pages/_app";
-
-//Components
 
 const HeaderFooterWraper = ({ children }) => {
   return (
@@ -15,7 +13,6 @@ const HeaderFooterWraper = ({ children }) => {
         <title>El Hector</title>
         <link rel="icon" href={prefix + "/favicon.ico"} />
       </Head>
-
       {children}
     </div>
   );

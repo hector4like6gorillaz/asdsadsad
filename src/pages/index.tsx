@@ -43,7 +43,7 @@ const IndexPage: NextPage = () => {
   const count = useAppSelector(selectCount);
   const mode = useAppSelector(DarkMode);
 
-  console.log(mode);
+  
   const [Data, setData] = useState<any>();
   
   const response = async (page: string) => envAPI(page);
