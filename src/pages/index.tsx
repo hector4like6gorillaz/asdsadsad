@@ -80,19 +80,6 @@ const IndexPage: NextPage = () => {
 
   return (
     <HeaderFooterWraper>
-      {/*
-    estas lineas son totalmente opcionales, aqui puedo colocar un loggin
-    o algo distinto si lo requiero, el useEffect es el que ayudara a leer 
-    los tokens en caso de existir, y en caso "de" hacer un algo, ya sea redirigir
-    al home o lo que requiera la app, por el momento solo entra aqui y con las mismas
-    redirige a "/home" a modo de conservar el las rutas, por el momento a modo de boiler
-    utilizando la api de pokemon de manera simple mostrare la info de charmander
-    con axios en este efecto
-
-    git remote add origin https://github.com/hector4like6gorillaz/boilerNextjs.git
-    git branch -M main
-    git push -u origin main
-    */}
       <DivContainerPokemon>
         <PokemonH2>
           Este es un boilerplate con Nextjs y la api de pokemon
