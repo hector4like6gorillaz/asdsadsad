@@ -1,11 +1,13 @@
 {
+  "name": "boilerplate-nextjs-13-2-22",
+  "version": "0.1.1",
   "private": true,
+  "homepage": "https://hector4like6gorillaz.github.io/",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "type-check": "tsc",
-    "test": "jest"
+    "export": "next export",
+    "start": "next start"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.3.6",
