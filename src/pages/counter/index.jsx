@@ -1,13 +1,25 @@
-
 import HeaderFooterWraper from "../../app/components/layout/InitWraper";
 import Counter from "../../Views/counter/Counter";
 import styles from "../../Views/counter/Counter.module.css";
+import { prefix } from "../_app";
 
 const index = () => {
   return (
     <HeaderFooterWraper>
-      <header style={{display:"flex", flexDirection:"column", alignItems:"center"}} className={styles.header}>
-        <img src="/logo.svg" style={{width:"20%"}} className={styles.logo} alt="logo" />
+      <header
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+        className={styles.header}
+      >
+        <img
+          src={prefix + require("../../../public/logo.svg")}
+          style={{ width: "20%" }}
+          className={styles.logo}
+          alt="logo"
+        />
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload....

@@ -28,17 +28,16 @@ jobs:
     - name: Haciendo el build   
       run: npm run build
       env:
-        NEXT_PUBLIC_BASE_PATH: ${{secrets.BASE_PATH}}
+        BASE_PATH: ${{secrets.BASE_PATH}}
     - name: Haciendo la exportacion     
       run: npm run export      
       env:
-        NEXT_PUBLIC_BASE_PATH: ${{secrets.BASE_PATH}}
+        BASE_PATH: ${{secrets.BASE_PATH}}
     - name: Creando el nojekyll     
       run: touch ./out/.nojekyll
 
     - name: Haciendo el Deploy 🚀 yei!!
       uses: JamesIves/github-pages-deploy-action@v4.2.3
       with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
          branch: gh-pages # The branch the action should deploy to.
          folder: out # The folder the action should deploy.

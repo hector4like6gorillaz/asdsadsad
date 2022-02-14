@@ -27,6 +27,7 @@ import {
   DarkMode,
   handleMode,
 } from "../app/components/ReduxSlices/CookiesSlice";
+import { prefix } from "./_app";
 
 const dependencias = [
   `"@apollo/client": "^3.4.16"`,
@@ -85,7 +86,10 @@ const IndexPage: NextPage = () => {
           Este es un boilerplate con Nextjs y la api de pokemon
         </PokemonH2>
         <CardPokemon onClick={() => dispatch(handleMode(!mode))}>
-          <PokemonImg alt="Imagen pokemon" src={Data?.sprites.front_default} />
+          <PokemonImg
+            alt="Imagen pokemon"
+            src={prefix + Data?.sprites.front_default}
+          />
           <PokemonName>{Data?.name}</PokemonName>
         </CardPokemon>
         <DivPokemonButton>
